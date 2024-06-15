@@ -29,8 +29,18 @@ console.log(last_digit);
 //4. Print all the digits of a Number N
 /*
 let N = 12111992;
-for (; N > 0; N = Math.floor(N / 10)) {
-  let last_digit = N % 10;
-  console.log(last_digit);
+if (N === 0) {
+  console.log(0);
+} else if (N < 0) {
+  N = N * -1;
+  for (; N > 0; N = Math.floor(N / 10)) {
+    let last_digit = N % 10;
+    console.log(last_digit);
+  }
+} else {
+  for (; N > 0; N = Math.floor(N / 10)) {
+    let last_digit = N % 10;
+    console.log(last_digit);
+  }
 }
 */
