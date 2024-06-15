@@ -18,3 +18,19 @@ for (let i = 1; i <= balls; i++) {
 }
 console.log(count);
 */
+
+//3. Print the last digit of the no. N
+/*
+let N = 1234;
+const last_digit = N % 10;
+console.log(last_digit);
+*/
+
+//4. Print all the digits of a Number N
+/*
+let N = 12111992;
+for (; N > 0; N = Math.floor(N / 10)) {
+  let last_digit = N % 10;
+  console.log(last_digit);
+}
+*/
