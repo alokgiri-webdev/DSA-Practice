@@ -77,3 +77,31 @@ for (; number > 0; number = Math.floor(number / 10)) {
 }
 console.log(reverse_number);
 */
+
+//7. Find all the factors of N
+/*
+const n = 48;
+let number = n;
+for (let i = 1; i <= n; i++) {
+  if (number % i === 0) {
+    console.log(i);
+  }
+}
+*/
+
+//8. Check if the no. is prime
+/*
+const n = 13;
+let number = n;
+let count = 0;
+for (let i = 1; i <= number; i++) {
+  if (number % i === 0) {
+    count++;
+  }
+}
+if (count === 2) {
+  console.log(`${n} is a prime no.`);
+} else {
+  console.log(`${n} is not a prime no.`);
+}
+*/
