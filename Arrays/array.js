@@ -91,12 +91,15 @@ for (let i = 1; i <= n; i++) {
 
 //8. Check if the no. is prime
 /*
-const n = 13;
+const n = 12;
 let number = n;
 let count = 0;
 for (let i = 1; i <= number; i++) {
   if (number % i === 0) {
     count++;
+  }
+  if (count > 2) {
+    break;
   }
 }
 if (count === 2) {
