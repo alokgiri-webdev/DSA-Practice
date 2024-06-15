@@ -65,3 +65,15 @@ for (; number > 0; number = Math.floor(number / 10)) {
 }
 console.log(sum);
 */
+
+//6. Given a positive no. N, reverse it. e.g N=6412 o/p:2146; N=4200 o/p:24
+/*
+const n = 4200;
+let number = n;
+let reverse_number = 0;
+for (; number > 0; number = Math.floor(number / 10)) {
+  let last_digit = number % 10;
+  reverse_number = reverse_number * 10 + last_digit;
+}
+console.log(reverse_number);
+*/
