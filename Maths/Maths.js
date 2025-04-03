@@ -46,64 +46,80 @@ for(let digit = N; digit>0; digit= Math.floor(digit/10)){
 
 //5. Given an integer N, print sum of all digits
 /*
-const N = 12111992;
-let number = N;
+let N = 45678;
+let last_digit;
 let sum = 0;
-if (number === 0) {
-  console.log(0);
-} else if (number < 0) {
-  number = number * -1;
-  for (; number > 0; number = Math.floor(number / 10)) {
-    let last_digit = number % 10;
-    sum += last_digit;
+if(N === 0){
+  sum = 0;
+}else if(N<0){
+  N = N*(-1);
+  for( ; N>0; N = Math.floor(N/10)){
+  last_digit = N%10;
+  sum +=last_digit;
   }
+  console.log(sum);
+}else{
+  for( ; N>0; N = Math.floor(N/10)){
+    last_digit = N%10;
+    sum +=last_digit;
+    }
+    console.log(sum);
 }
-for (; number > 0; number = Math.floor(number / 10)) {
-  let last_digit = number % 10;
-  sum += last_digit;
-}
-console.log(sum);
 */
-
 //6. Given a positive no. N, reverse it. e.g N=6412 o/p:2146; N=4200 o/p:24
 /*
-const n = 4200;
-let number = n;
-let reverse_number = 0;
-for (; number > 0; number = Math.floor(number / 10)) {
-  let last_digit = number % 10;
-  reverse_number = reverse_number * 10 + last_digit;
+let N = 6412;
+let last_digit;
+let reverseDigit=0;
+if(N === 0){
+console.log(reverseDigit);
+}else if(N<0){
+  N = N*(-1);
+  for( ; N>0; N = Math.floor(N/10)){
+    last_digit = N%10;
+    reverseDigit = reverseDigit*10 + last_digit;
+  }
+  console.log(reverseDigit);
+}else{
+  for( ; N>0; N = Math.floor(N/10)){
+    last_digit = N%10;
+    reverseDigit = reverseDigit*10 + last_digit;
+  }
+  console.log(reverseDigit);
 }
-console.log(reverse_number);
 */
 
 //7. Find all the factors of N
 /*
-const n = 48;
-let number = n;
-for (let i = 1; i <= n; i++) {
-  if (number % i === 0) {
-    console.log(i);
+let N = 49;
+let factors;
+let count = 0;
+for(let i = 1; i <= N; i++){
+  if(N%i === 0){
+  count++;
+  factors = i;
+  console.log(factors);
   }
 }
+console.log(count);
 */
 
 //8. Check if the no. is prime
 /*
-const n = 12;
-let number = n;
+let N = 12;
 let count = 0;
-for (let i = 1; i <= number; i++) {
-  if (number % i === 0) {
-    count++;
-  }
-  if (count > 2) {
-    break;
-  }
-}
-if (count === 2) {
-  console.log(`${n} is a prime no.`);
+if(N === 0 || N === 1 || N<0){
+  console.log('N is not a prime no.');
 } else {
-  console.log(`${n} is not a prime no.`);
+for(let i=1; i<=N; i++){
+  if(N%i===0){
+    count++;
+    }
+}
+if(count>2){
+  console.log('N is not a prime no.');
+}else if(count===2){
+  console.log('N is a prime no.');
+}
 }
 */
