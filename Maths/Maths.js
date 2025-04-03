@@ -3,45 +3,44 @@
 //1. Print odd nos from 1 to N
 /*
 let N = 10;
-for (let i = 1; i <= N; i++) {
-  i = i + 2;
+for(let i=1; i<=N; i+=2){
   console.log(i);
 }
 */
 
 //2. Loop for bowling all balls in an over
 /*
-let count = 0;
-const balls = 6;
-for (let i = 1; i <= balls; i++) {
-  count += 1;
+const over = 6;
+for(let ball=1; ball<=6; ball++){
+  console.log(ball);
 }
-console.log(count);
 */
 
 //3. Print the last digit of the no. N
 /*
-let N = 1234;
-const last_digit = N % 10;
-console.log(last_digit);
+let N = 4567;
+const lastDigit = N%10;
+console.log(lastDigit);
 */
 
-//4. Print all the digits of a Number N
+//4. Print all the digits of a Number N (Ask for edge cases like N=0, N<0 in this case)
 /*
-let N = 12111992;
-if (N === 0) {
-  console.log(0);
-} else if (N < 0) {
-  N = N * -1;
-  for (; N > 0; N = Math.floor(N / 10)) {
-    let last_digit = N % 10;
+let N = 0;
+let last_digit;
+if(N === 0){
+  last_digit = 0;
+  console.log(last_digit);
+} else if(N < 0){
+  N = N*(-1);
+  for(let digit = N; digit>0; digit= Math.floor(digit/10)){
+    last_digit = digit%10;
     console.log(last_digit);
-  }
-} else {
-  for (; N > 0; N = Math.floor(N / 10)) {
-    let last_digit = N % 10;
-    console.log(last_digit);
-  }
+    }
+} else{
+for(let digit = N; digit>0; digit= Math.floor(digit/10)){
+  last_digit = digit%10;
+  console.log(last_digit);
+}
 }
 */
 
