@@ -288,7 +288,7 @@ N = 5
   4 5 6 7 6 5 4
 5 6 7 8 9 8 7 6 5
 */
-
+/*
 let N = 5;
 for(let row=1; row<=N; row++){
   let spaces = " ".repeat((N-row)*2);
@@ -304,4 +304,26 @@ for(let row=1; row<=N; row++){
     dec += i + " ";
   }
   console.log(spaces+inc+dec.trim());
+}
+*/
+
+//13. For N, print 
+/*
+N = 5;
+
+        5
+      4 8 12
+    3 6 9 12 15
+  2 4 6 8 10 12 14
+1 2 3 4 5 6  7  8  9
+
+*/
+let N = 5;
+for(let row=N; row>=1; row--){
+  let spaces = " ".repeat((row-1)*2);
+  let numbers = '';
+  for(let i=1; i<=(2*(N-row)+1); i++){
+  numbers += (row*i)+" ";
+  }
+  console.log(spaces+numbers);
 }
