@@ -251,3 +251,57 @@ for(let row=2; row<=N; row++){
   console.log(spaceLeft+stars+spaceRight);
 }
 */
+
+// 11. For N=5, Print,
+/*
+N = 5 
+
+        1
+      2 3 4
+    3 4 5 6 7
+  4 5 6 7 8 9 10
+5 6 7 8 9 10 11 12 13
+*/
+
+
+/*
+let N = 5;
+for (let row = 1; row <= N; row++) {
+  let spaces = " ".repeat((N - row)); // Spaces before numbers
+  let start = row; // First number in the row
+  let numbers = ""; // Holds the number sequence
+
+  for (let i = 0; i < row * 2 - 1; i++) {
+    numbers += (start + i) + " ";
+  }
+
+  console.log(spaces + numbers.trim()); // Print the final row
+}
+*/
+
+//12. For N, Print 
+/*
+N = 5 
+        1
+      2 3 2
+    3 4 5 4 3
+  4 5 6 7 6 5 4
+5 6 7 8 9 8 7 6 5
+*/
+
+let N = 5;
+for(let row=1; row<=N; row++){
+  let spaces = " ".repeat((N-row)*2);
+  let start = row;
+  let inc = "";
+  let dec = '';
+  //Increasing Part
+  for(let i=0; i<row; i++){
+  inc += (start+i)+" ";
+  }
+  //Decreasing Part
+  for (let i = row * 2 - 2; i >= row; i--) {
+    dec += i + " ";
+  }
+  console.log(spaces+inc+dec.trim());
+}
