@@ -213,3 +213,10 @@ for(let row=N; row>=1; row--){
   let starRight = "*".repeat(row);
   console.log(starLeft+spaces+starRight);
 }
+
+for(let row=1; row<=N; row++){
+  let starLeft = "*".repeat(row);
+  let spaces = " ".repeat(totalCols-2*row);
+  let starRight = "*".repeat(row);
+  console.log(starRight+spaces+starRight);
+}
