@@ -318,6 +318,7 @@ N = 5;
 1 2 3 4 5 6  7  8  9
 
 */
+/*
 let N = 5;
 for(let row=N; row>=1; row--){
   let spaces = " ".repeat((row-1)*2);
@@ -327,3 +328,4 @@ for(let row=N; row>=1; row--){
   }
   console.log(spaces+numbers);
 }
+*/
