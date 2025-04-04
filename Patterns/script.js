@@ -201,9 +201,11 @@ N = 3
 ******
 **  **
 *    *
+**  **
+******
 
 */
-
+/*
 let N = 3;
 let totalCols = N*2;
 
@@ -214,9 +216,38 @@ for(let row=N; row>=1; row--){
   console.log(starLeft+spaces+starRight);
 }
 
-for(let row=1; row<=N; row++){
+for(let row=2; row<=N; row++){
   let starLeft = "*".repeat(row);
   let spaces = " ".repeat(totalCols-2*row);
   let starRight = "*".repeat(row);
-  console.log(starRight+spaces+starRight);
+  console.log(starLeft+spaces+starRight);
 }
+*/
+
+//10. For N, print
+/*
+N=3;
+
+  *
+ ***
+*****
+ ***
+  *
+
+*/
+/*
+let N = 5;
+let totalCols = (N*2)-1;
+for(let row=N; row>=1; row--){
+  let spaceLeft = " ".repeat(row-1);
+  let stars = "*".repeat(totalCols-2*(row-1));
+  let spaceRight = " ".repeat(row-1);
+  console.log(spaceLeft+stars+spaceRight);
+}
+for(let row=2; row<=N; row++){
+  let spaceLeft = " ".repeat(row-1);
+  let stars = "*".repeat(totalCols-2*(row-1));
+  let spaceRight = " ".repeat(row-1);
+  console.log(spaceLeft+stars+spaceRight);
+}
+*/
