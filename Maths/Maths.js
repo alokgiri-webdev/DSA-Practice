@@ -324,6 +324,7 @@ for(let t=0; t<T; t++){
 */
 
 /*
+4. Problem Description--------------------------------------------------
 Given the Number of Test Cases as T,
 For each test case, take an integer N as input, you have to tell whether it is a perfect number or not.
 
@@ -401,3 +402,111 @@ for(let t=0; t<T; t++){
 }
 */
 
+/*
+5. Problem Description---------------------------------------------------
+Take T (number of test cases) as input.
+For each test case, take integer N as input and Print the count of digits of that number.
+
+Note: No of digits for number 0 is considered as 1.
+
+Problem Constraints
+
+1 <= T <= 1000
+0 <= N <= 100000000
+
+Input Format
+
+The first line is the number T which denotes the total number of test cases.
+Next T lines contain an integer N for which you have to print the number of digits.
+Output Format
+
+For T different Numbers, Print the number of digits in separate lines.
+Example Input
+
+Input 1: 
+2
+0
+1
+
+Input 2:
+2
+100
+10101
+Example Output
+
+Output 1:
+1
+1
+Output 2:
+3
+5
+*/
+
+/* Solution
+const countOfDigits = function(N){
+  let count = 0;
+  for(; N>0; N=Math.floor(N/10)){
+    count++;
+  }
+  return count;
+}
+
+let T = parseInt(prompt(`No. of Test cases`));
+for(let t=0; t<T; t++){
+  let N = parseInt(prompt(`Enter value of N`));
+  console.log(countOfDigits(N));
+}
+*/
+
+/*
+6. Problem Description
+
+You are given an integer N and the task is to reverse the digits of the given integer. Return 0 if the result overflows and does not fit in a 32 bit signed integer
+
+Look at the example for clarification.
+
+Problem Constraints
+
+N belongs to the Integer limits.
+
+Input Format
+
+Input an Integer.
+
+
+Output Format
+
+Return a single integer denoting the reverse of the given integer.
+
+
+Example Input
+
+Input 1:
+
+ x = 123
+
+Input 2:
+
+ x = -123
+
+Example Output
+
+Output 1:
+
+ 321
+
+Ouput 2:
+
+ -321
+*/
+/*
+const reverseInteger = function(N){
+  let reverse = 0;
+  let sign = N<0?-1:1;
+  N = Math.abs(N);
+  for(; N>0; N = Math.floor(N/10)){
+    reverse = reverse*10 + N%10; 
+  }
+  return reverse*sign;
+}
+*/
