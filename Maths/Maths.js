@@ -613,15 +613,96 @@ Output 2:
 6
 23
 */
-
+/*
 let number = parseInt(prompt('Enter the no.'));
 
-const sumOfDigits = function(a){
+const sumOfDigits = function(num){
   let sum = 0;
-    for(; a>0; a=Math.floor(a/10)){
+    for(; num>0; num=Math.floor(num/10)){
       let digit = a%10;
       sum += digit;
     }
   return sum;
 }
 console.log(sumOfDigits(number));
+*/
+
+/*
+3. Problem Description
+
+You are given an integer N you need to print all the Armstrong Numbers between 1 to N. (N inclusive).
+If sum of cubes of each digit of the number is equal to the number itself, then the number is called an Armstrong number.
+For example, 153 = ( 1 * 1 * 1 ) + ( 5 * 5 * 5 ) + ( 3 * 3 * 3 ).
+Note: All the test cases in this problem are limited to 3 digit numbers.
+
+Problem Constraints
+
+1 <= N <= 500
+
+Input Format
+
+First and only line of input contains an integer N.
+
+Output Format
+
+Output all the Armstrong numbers in range [1,N] each in a new line.
+
+Example Input
+
+Input 1:
+
+ 5
+Input 2:
+
+ 200
+
+
+Example Output
+
+Output 1:
+
+1
+Output 2:
+
+1
+153
+
+
+Example Explanation
+
+Explanation 1:
+
+1 is an armstrong number.
+Explanation 2:
+
+1 and 153 are armstrong number under 200.
+*/
+
+
+
+const cube = function(num){
+  return Math.pow(num,3);
+};
+
+const checkArmstrong = function(num){
+  let originalNum = num;
+  let sum = 0;
+  while(num>0){
+    let digit = num%10;
+    sum += cube(digit);
+    num = Math.floor(num/10);
+    }
+  return sum === originalNum;
+}
+
+let upperRange = parseInt(prompt("Enter upperRange value"));
+
+const allArmstrongNum = function(upperRange){
+for(let lowerRange=1; lowerRange<=upperRange; lowerRange++){
+  if(checkArmstrong(lowerRange)){
+    console.log(`${lowerRange} is an Armstrong no.`);
+  }
+}
+}
+
+allArmstrongNum(upperRange);
