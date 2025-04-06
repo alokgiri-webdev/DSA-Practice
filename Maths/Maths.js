@@ -838,3 +838,70 @@ const findLCM = function(num1, num2){
 
 console.log(findLCM(48,12));
 */
+
+/*
+6. Problem Description
+
+You are given an integer A as input and you need to determine whether it is a palindrome or not.
+A palindrome integer is one whose digits, when reversed, result in the same number.
+For example, 121 is a palindrome because its reverse is also 121, but 123 is not a palindrome because its reverse is 321.
+
+Note: The given integer will not have any leading zeros.
+
+
+Problem Constraints
+
+1 <= A <= 106
+
+
+
+Input Format
+
+First and the only line contains a single integer A.
+
+
+
+Output Format
+
+Print Yes if it is palindromic, else print No.
+
+
+
+Example Input
+
+Input 1:
+
+ 120 
+Input 2:
+
+ 1001 
+Input 3:
+
+ 131 
+
+
+Example Output
+
+Output 1:
+
+ No 
+Output 2:
+
+ Yes 
+Output 3:
+
+ Yes 
+*/
+/*
+const checkPalindrome = function(num){
+  let originalNum = num;
+  let reverse = 0;
+  while(num>0){
+    let digit = num%10;
+    reverse = reverse*10 + digit;
+    num = Math.floor(num/10);
+  }
+  return reverse === originalNum ? "Yes" : "No";
+}
+console.log(checkPalindrome(121));
+*/
