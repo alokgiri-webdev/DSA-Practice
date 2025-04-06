@@ -499,14 +499,19 @@ Ouput 2:
 
  -321
 */
-/*
+
 const reverseInteger = function(N){
+  const intMax = Math.pow(2,31)-1;
   let reverse = 0;
   let sign = N<0?-1:1;
   N = Math.abs(N);
+  
   for(; N>0; N = Math.floor(N/10)){
+    if(reverse > Math.floor(intMax/10) || (reverse === Math.floor(intMax/10) && N%10>7)){
+      return 0;
+    }
     reverse = reverse*10 + N%10; 
   }
   return reverse*sign;
 }
-*/
+
