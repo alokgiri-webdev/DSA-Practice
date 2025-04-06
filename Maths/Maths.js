@@ -499,7 +499,7 @@ Ouput 2:
 
  -321
 */
-
+/*
 const reverseInteger = function(N){
   const intMax = Math.pow(2,31)-1;
   let reverse = 0;
@@ -514,4 +514,65 @@ const reverseInteger = function(N){
   }
   return reverse*sign;
 }
+*/
 
+// ADDITIONAL PROBLEMS-------------------------------------------------------------------
+/*
+//1. Problem Description
+
+Write a program to input two integers A & B from user and print their HCF.
+
+Definition Of HCF: The HCF(Highest Common Factor) or the GCD(greatest common divisor) of two positive integers happens to be the largest positive integer that divides the numbers without leaving a remainder.
+
+Problem Constraints
+
+1 <= A,B <= 100000
+
+
+
+Input Format
+
+First line will contain 2 integers A and B
+
+
+Output Format
+
+An integer which is the HCF of A & B.
+
+
+
+Example Input
+
+Input 1:
+
+15 105 
+Input 2:
+
+24 36 
+
+
+Example Output
+
+Output 1:
+
+15
+Output 2:
+
+12
+*/
+//Solution
+/*
+let intOne = parseInt(prompt('Enter First Integer'));
+let intTwo = parseInt(prompt('Enter Second Integer'));
+
+const findHCF = function(a, b){
+  //Solving this using Euclidean Algorithm
+  while(b>0){
+    let temp = b;
+    b = a%b;
+    a = temp;
+  }
+  return Math.abs(a);
+}
+console.log(findHCF(intOne,intTwo));
+*/
