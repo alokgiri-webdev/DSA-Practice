@@ -678,8 +678,7 @@ Explanation 2:
 1 and 153 are armstrong number under 200.
 */
 
-
-
+/*
 const cube = function(num){
   return Math.pow(num,3);
 };
@@ -687,11 +686,13 @@ const cube = function(num){
 const checkArmstrong = function(num){
   let originalNum = num;
   let sum = 0;
+
   while(num>0){
     let digit = num%10;
     sum += cube(digit);
     num = Math.floor(num/10);
     }
+
   return sum === originalNum;
 }
 
@@ -706,3 +707,134 @@ for(let lowerRange=1; lowerRange<=upperRange; lowerRange++){
 }
 
 allArmstrongNum(upperRange);
+*/
+
+/*
+4. Problem Description
+You are given an integer N you need to print all the Prime Numbers between 1 and N.
+Prime numbers are numbers that have only 2 factors: 1 and themselves. For example, the first 5 prime numbers are 2, 3, 5, 7, and 11.
+
+Problem Constraints
+
+1 <= N <= 300
+
+Input Format
+
+First and only line of input contains a single integer N.
+
+
+Output Format
+
+Print all the prime numbers between between 1 and N each in a new line.
+
+Example Input
+Input 1:
+
+ 5
+Input 2:
+
+ 10
+
+
+Example Output
+
+Output 1:
+
+ 2
+ 3
+ 5
+Output 2:
+
+ 2
+ 3
+ 5
+ 7
+*/
+/*
+const checkPrime = function(num){
+  for(let i=2; i<=Math.sqrt(num); i++){
+    if(num%i === 0){
+      return false;
+    }
+  }
+  return true;
+}
+
+const allPrimeNum = function(upperRange){
+  for(let i=2; i<=upperRange; i++){
+    if(checkPrime(i)){
+      console.log(i);
+    }
+  }
+}
+allPrimeNum(15);
+*/
+
+/*
+5. Problem Description
+
+Implement a program that takes two positive integers A and B in the input and prints their LCM.
+Definition of LCM : The Least Common Multiple or LCM of two numbers say A and B, is denoted as LCM (A,B). And the LCM is the smallest or least positive integer that is divisible by both A and B.
+
+Problem Constraints
+
+1 <= A,B <= 200
+
+
+Input Format
+
+Two space separated integers A and B in the input.
+
+
+Output Format
+
+Output a single integer that is the LCM of A and B.
+
+
+Example Input
+
+Input 1:
+
+
+5 10
+Input 2:
+
+2 3
+
+Example Output
+
+Output 1:
+
+
+10
+Output 2:
+
+6
+*/
+/*
+const findLCM = function(num1, num2){
+  for(let i=1; i<=(num1*num2); i++){
+    if(i%num1 === 0 && i%num2===0){
+      return i;
+    }
+  }
+}
+console.log(findLCM(10,15));
+*/
+/*
+const findHCF = function(num1, num2){
+  //Applying Euclidean's Algorithm
+  while(num2>0){
+    let temp = num2;
+    num2 = num1%num2;
+    num1 = temp;
+  }
+  return num1;
+}
+
+const findLCM = function(num1, num2){
+  return (num1*num2)/findHCF(num1,num2);
+}
+
+console.log(findLCM(48,12));
+*/
