@@ -329,3 +329,255 @@ for(let row=N; row>=1; row--){
   console.log(spaces+numbers);
 }
 */
+
+//ASSIGNMENTS--------------------------------------------------------------------
+/*
+1. Problem Description
+
+Given an integer N, print N stars in a single line.
+
+For example if N = 5 then pattern will be like:
+
+*****
+
+Problem Constraints
+
+2 <= N <= 100
+
+
+
+Input Format
+
+Single line input contains a single integer N.
+
+
+
+Output Format
+
+Output N stars in a single line.
+
+
+Example Input
+
+Input 1:
+
+ 2
+Input 2:
+
+ 3
+
+Example Output
+
+Output 1:
+
+**
+Output 2:
+
+***
+*/
+/*
+let count = 5;
+const printStars = (count) => "*".repeat(count);
+console.log(printStars(count));
+*/
+
+/*
+2. Problem Description
+
+Given two integers N and M as inputs, print a rectangle of N * M stars.
+
+For example if N = 3, M = 4 then pattern will be like:
+
+****
+****
+****
+
+Problem Constraints
+
+2 <= N, M <= 100
+
+
+
+Input Format
+
+First line of input contains an integers N (no of rows).
+
+Second line of input contains an integer M (no of cols).
+
+Output Format
+
+Output N * M rectangle of stars.
+
+Example Input
+
+Input 1:
+
+ 2
+ 3
+Input 2:
+
+ 3
+ 1
+
+Example Output
+
+Output 1:
+
+***
+***
+Output 2:
+
+*
+*
+*
+
+*/
+/*
+const printRectangleOfstars = (row,col)=>{
+  if(row<0 || col<0){
+    return "";
+  }
+  let stars = '';
+  for(let i=1; i<=row; i++){
+      stars += "*".repeat(col) + '\n';
+    }
+  return stars.trimEnd();
+}
+console.log(printRectangleOfstars(3,4));
+*/
+
+/*
+3. Problem Description
+
+Take an integer N as input, print the corresponding stair pattern for N.
+
+For example if N = 4 then stair pattern will be like:
+
+*
+**
+***
+****
+
+Problem Constraints
+
+1 <= N <= 100
+
+
+
+Input Format
+
+First and only line of input contains a single integer N.
+
+
+
+Output Format
+
+Output the stair pattern corresponding to the given N.
+
+
+
+Example Input
+
+Input 1:
+
+ 2
+Input 2:
+
+ 3
+
+
+Example Output
+
+Output 1:
+
+ *
+ **
+Output 2:
+
+ *
+ **
+ ***
+*/
+/*
+const printStarsPattern = (row)=>{
+  if(row<0 || row===0){
+    return "";
+  }
+  let stars = '';
+  for(let i=1; i<=row; i++){
+    stars += '*'.repeat(i) + '\n';
+  }
+  return stars.trimEnd();
+}
+
+console.log(printStarsPattern(4));
+*/
+
+/*
+Problem Description
+
+Take an integer N as input, print the corresponding pattern for N.
+
+For example if N = 5 then pattern will be like:
+
+1
+1_
+1_3
+1_3_
+1_3_5
+Note : Here '_' represents space for explanation purpose only. You have to print space in your code.
+
+
+Problem Constraints
+
+1 <= N <= 100
+
+
+
+Input Format
+
+First and only line of input contains a single integer N.
+
+
+
+Output Format
+
+Output the pattern corresponding to the given N.
+
+
+Example Input
+
+Input 1:
+
+ 2
+Input 2:
+
+ 3
+
+
+Example Output
+
+Output 1:
+
+1
+1 
+Output 2:
+
+ 1
+ 1 
+ 1 3
+*/
+/*
+const printNumsPattern = (row) => {
+  let numPattern = '';
+  for(let i=1; i<=row; i++){
+    if(i%2===0){
+      numPattern += '_';
+    }else{
+      numPattern += i;
+    }
+    console.log(numPattern.trimEnd());
+  }
+}
+printNumsPattern(5);
+*/
