@@ -635,6 +635,7 @@ Output 2:
 *  *
 
 */
+/*
 const printStars = (row) => {
   let stars = "";
   if(row===1){
@@ -647,3 +648,65 @@ const printStars = (row) => {
   }
 }
 printStars(4);
+*/
+
+/*
+6. Problem Description
+
+Take an integer N as input, print the corresponding pattern for N.
+
+For example if N = 5 then pattern will be like:
+
+____*
+___**
+__***
+_****
+*****
+Note : Here '_' represents space for explanation purpose only. You have to print space in your code.
+
+
+Problem Constraints
+
+1 <= N <= 100
+
+Input Format
+
+First and only line of input contains a single integer N.
+
+
+Output Format
+
+Output the pattern corresponding to the given N.
+
+
+Example Input
+
+Input 1:
+
+ 2
+Input 2:
+
+ 3
+
+Example Output
+
+Output 1:
+
+ *
+**
+Output 2:
+
+  *
+ **
+***
+
+*/
+let N = 5;
+const printStars = (N) => {
+  for(let i=1; i<=N; i++){
+    let spaces = " ".repeat(N-i);
+    let stars = "*".repeat(i);
+    console.log(spaces+stars);
+  }
+}
+printStars(N);
