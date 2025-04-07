@@ -581,3 +581,69 @@ const printNumsPattern = (row) => {
 }
 printNumsPattern(5);
 */
+
+/*
+5. Problem Description
+
+Print a pattern consisting of N rows, where each row contains an asterisk (*) at the beginning and end of the line, with N-2 spaces in between.
+
+The Pattern should look like:
+
+*<N-2 Spaces>*
+
+Print the above pattern for a total of N Rows.
+
+Refer Example ouput, for better clarification.
+
+
+Problem Constraints
+
+2 <= N <= 100
+
+Input Format
+
+First and only line of input contains a single integer N.
+
+
+
+Output Format
+
+Output the pattern corresponding to the given N.
+
+
+
+Example Input
+
+Input 1:
+
+ 2
+Input 2:
+
+ 4
+
+Example Output
+
+Output 1:
+
+**
+**
+Output 2:
+
+*  *
+*  *
+*  *
+*  *
+
+*/
+const printStars = (row) => {
+  let stars = "";
+  if(row===1){
+    console.log("*");
+   }
+  let spaces = " ".repeat(row-2);
+  stars = "*"+spaces+"*";
+  for(let i=1; i<=row; i++){
+    console.log(stars);
+  }
+}
+printStars(4);
