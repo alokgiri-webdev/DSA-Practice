@@ -776,7 +776,7 @@ printPattern(3);
 
 //ADDITIONAL PROBLEMS---------------------------------------------------------------
 /*
-Problem Description
+1. Problem Description
 Take an integer N as input, print the corresponding pattern for N.
 For example if N = 4 then pattern will be like:
 
@@ -823,7 +823,7 @@ Output 2:
 1 2
 1 2 3
 */
-
+/*
 const printNumPattern = (N)=>{
   for(let row = 1; row<=N; row++){
     let line = '';
@@ -833,5 +833,68 @@ const printNumPattern = (N)=>{
     console.log(line);
   }
 }
-
 printNumPattern(4);
+*/
+
+/*
+2. Problem Description
+
+Given an integer N, print the corresponding Inverted Half Pyramid pattern for N.
+
+For example if N = 4 then pattern will be like:
+
+****
+***
+**
+*
+
+
+Problem Constraints
+
+1 <= N <= 100
+
+
+
+Input Format
+
+First and only line of input contains a single integer N.
+
+
+
+Output Format
+
+Output the Inverted Half Pyramid pattern corresponding to the given N.
+
+
+
+Example Input
+
+Input 1:
+
+ 2
+Input 2:
+
+ 3
+Example Output
+
+Output 1:
+ **
+ *
+Output 2:
+ ***
+ **
+ *
+
+*/
+/*
+const printStarsPattern = (N) => {
+for(let row=N; row>0; row--){
+  let stars = '';
+  for(let col=1; col<=row; col++){
+    stars += '*';
+  }
+  console.log(stars);
+}
+}
+printStarsPattern(4);
+*/
