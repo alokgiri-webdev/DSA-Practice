@@ -1089,7 +1089,7 @@ Output 2:
 
 NOTE: Here '_' is used to represent spaces. You have to print spaces in your code.
 */
-
+/*
 const printStarsPattern = (N) => {
   for(let row=N; row>0; row--){
     let starsLeft = '*'.repeat(row);
@@ -1099,3 +1099,153 @@ const printStarsPattern = (N) => {
   }
 }
 printStarsPattern(4);
+*/
+
+/*
+6. Problem Description
+
+Write a program to input an integer N from user and print hollow inverted right triangle star pattern of N lines using '*'.
+
+See example for clarifications.
+
+
+
+Problem Constraints
+
+1 <= N <= 1000
+
+
+
+Input Format
+
+First line is an integer N
+
+
+
+Output Format
+
+N lines conatining only char '*' as per the question.
+
+
+
+Example Input
+
+Input 1:
+
+7
+Input 2:
+
+4
+
+
+Example Output
+
+Output 1:
+
+*******
+*    *
+*   *
+*  *
+* *
+**
+*
+Output 2:
+
+****
+* *
+**
+*
+
+*/
+/*
+const printStarsPattern = (N) => {
+  for(let row = 1; row<=N; row++){
+    if(row === 1){
+      console.log("*".repeat(N));
+    }else{  
+      let starsLeft = "*";
+      let spaces = " ".repeat(N-row); 
+      let starsRight = row===N?"":"*";
+      console.log(starsLeft+spaces+starsRight);
+    }
+  }
+}
+console.log(printStarsPattern(7));
+*/
+/*
+const printStarsPattern = (N) => {
+  for(let row = 1; row <= N; row++) {
+    if(row === 1) {
+      console.log("*".repeat(N));
+    } else {
+      let starsLeft = "*";
+      let spaces = " ".repeat(Math.max(0, N - row - 1)); 
+      let starsRight = row === N ? " " : "*";
+      console.log(starsLeft + spaces + starsRight);
+    }
+  }
+}
+printStarsPattern(7);
+*/
+
+/*
+7. Problem Description
+
+Take an integer N as input, print the corresponding pattern for N.
+
+For example if N = 5 then pattern will be like:
+
+*****
+*   *
+*   *
+*   *
+*****
+Note : Except for the first line and the last line, every line will have N-2 spaces between the two stars.
+
+Problem Constraints
+
+3 <= N <= 100
+
+Input Format
+
+First and only line of input contains a single integer N.
+
+Output Format
+
+Output the pattern corresponding to the given N.
+
+Example Input
+
+Input 1:
+
+ 3
+Input 2:
+
+ 4
+Example Output
+
+Output 1:
+
+***
+* *
+***
+Output 2:
+
+****
+*  *
+*  *
+****
+
+*/
+/*
+const printPhotoFrame = (N) => {
+for(let row = 1; row<=N; row++){
+  if(row === 1 || row === N){
+  console.log('*'.repeat(N));
+  }else{
+    console.log('*'+" ".repeat(N-2)+"*");
+  }
+}
+}
+printPhotoFrame(4);
+*/
