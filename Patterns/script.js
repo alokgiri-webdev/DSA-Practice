@@ -1558,3 +1558,46 @@ const printStars = (N) => {
 }
 printStars(3);
 */
+
+//ADDITIONAL PROBLEMS
+/*
+1. Problem Description
+Take an integer N as input. Print the following pattern of N lines. For N = 5 The following pattern is printed.
+
+*     *
+
+*    *
+
+*   *
+
+*  *
+
+* *
+The first line has 5 blank spaces between the stars.
+The second line has 4 blank spaces between the stars, and so on.
+
+Input Format
+
+The input will be a single integer N.
+Output Format
+
+The output will be the pattern according to the given N value as described in the problem description.
+Sample Input
+
+3
+Sample Output
+
+*   *
+*  *
+* *
+
+*/
+/*
+const printPattern = (N) => {
+  for(let row = N; row>0; row--){
+   let spaces = ' '.repeat(row);
+   console.log('*'+spaces+'*'); 
+  }
+}
+printPattern(3);
+*/
