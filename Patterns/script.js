@@ -1381,6 +1381,7 @@ Output 1:
 **** // 0 spaces
 
 *__* // 2 spaces
+
 Output 2:
 
 ****** // 0 spaces
@@ -1397,6 +1398,86 @@ const printPattern = (N) => {
     let stars = '*'.repeat(row);
     let spaces = ' '.repeat(2*(N-row));
     console.log(stars+spaces+stars);
+  }
+}
+printPattern(3);
+*/
+
+/*
+3. Problem Description
+
+Given an integer N as input, print the corresponding Full Numeric Pyramid pattern for N.
+
+For example if N = 5 then pattern will be like:
+
+0 0 0 0 1 0 0 0 0 
+0 0 0 2 3 2 0 0 0 
+0 0 3 4 5 4 3 0 0
+0 4 5 6 7 6 5 4 0
+5 6 7 8 9 8 7 6 5 
+
+NOTE: There should be exactly one extra space after each number for each row.
+
+
+Problem Constraints
+
+2 <= N <= 100
+
+
+
+Input Format
+
+First and only line of input contains a single integer N.
+
+
+
+Output Format
+
+Output the Full Pyramid pattern corresponding to the given N.
+
+NOTE:
+
+There is no extra space before the first integer of any row.
+There is an extra space after the last integer of any row.
+All the integers in any row are space separated.
+
+
+Example Input
+
+Input 1:
+
+ 2
+Input 2:
+
+ 3
+
+
+Example Output
+
+Output 1:
+
+0 1 0
+2 3 2
+Output 2:
+
+0 0 1 0 0
+0 2 3 2 0
+3 4 5 4 3
+
+*/
+/*
+const printPattern = (N) => {
+  for(let row = 1; row<=N; row++){
+    let spaces = '0'.repeat(N-row);
+    let num = '';
+    let num_2 ="";
+    for( let i = row; i<=(2*row -1); i++){
+      num += i;
+    }
+    for(let j = (2*row -2); j>=row; j--){
+      num_2 += j;
+    }
+    console.log(spaces+num+num_2+spaces);
   }
 }
 printPattern(3);
