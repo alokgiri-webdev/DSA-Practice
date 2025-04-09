@@ -1601,3 +1601,103 @@ const printPattern = (N) => {
 }
 printPattern(3);
 */
+
+/*
+2. Problem Description
+
+Take an integer N as input, print the corresponding Full Numeric Pyramid pattern for N.
+
+For example if N = 5 then pattern will be like:
+
+0 0 0 0 5 0 0 0 0 
+0 0 0 4 8 12 0 0 0 
+0 0 3 6 9 12 15 0 0
+0 2 4 6 8 10 12 14 0
+1 2 3 4 5 6 7 8 9 
+NOTE: There should be exactly one extra space after each number for each row.
+
+
+Problem Constraints
+
+2 <= N <= 100
+
+
+
+Input Format
+
+First and only line of input contains a single integer N.
+
+
+
+Output Format
+
+Output the Full Pyramid pattern corresponding to the given N.
+
+NOTE:
+
+There is no extra space before the first integer of any row.
+There is an extra space after the last integer of any row.
+All the integers in any row are space separated.
+
+
+Example Input
+
+Input 1:
+
+2
+Input 2:
+
+3
+
+
+Example Output
+
+Output 1:
+
+0 2 0
+1 2 3
+Output 2:
+
+0 0 3 0 0
+0 2 4 6 0
+1 2 3 4 5
+
+*/
+/*
+const printNumPattern = (N) => {
+  for(let row = N; row>0; row--){
+    let spaces = "0 ".repeat(row-1);
+    let num = '';
+    for(let col=1; col<=(2*(N-row)+1); col++){
+      num += (col*row)+' ';
+    }
+    console.log(spaces+num+spaces);
+  }
+}
+printNumPattern(5);
+*/
+
+/*
+const printNumPattern = (N) => {
+  for (let row = 1; row <= N; row++) {
+    let line = '';
+
+    // Stage 1: Left zeroes
+    line += '0 '.repeat(N - row);
+
+    // Stage 2: Numbers (multiples of row)
+    const numCols = 2 * (row - 1) + 1;
+    for (let col = 1; col <= numCols; col++) {
+      line += (row * col) + ' ';
+    }
+
+    // Stage 3: Right zeroes
+    line += '0 '.repeat(N - row);
+
+    // Print the line after trimming any trailing space
+    console.log(line.trim());
+  }
+};
+
+printNumPattern(3);
+*/
