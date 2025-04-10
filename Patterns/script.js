@@ -1703,28 +1703,6 @@ printNumPattern(3);
 */
 
 /*
-3. Problem Description
-
-Take an integer N as input, print the corresponding Half Diamond pattern with 2*N - 1 rows.
-
-For example if N = 5 then pattern will be like:
-
-* 
-**
-***
-****
-*****
-****
-***
-**
-*
-NOTE: There should be no spaces after any * .
-
-
-Problem Constraints
-
-2 <= N <= 100
-
 
 
 Input Format
