@@ -1548,20 +1548,26 @@ Output 3:
  * * * * 
 
 */
-/*
-const printStars = (N) => {
-  for(let row=1; row<=N; row++){
-    let spaces = ' '.repeat(N-row);
-    let stars = '* '.repeat(row);
-    console.log(spaces+stars);
-  }
-}
-printStars(3);
-*/
 
 //ADDITIONAL PROBLEMS
 /*
-1
+1. Problem Description
+Take an integer N as input. Print the following pattern of N lines. For N = 5 The following pattern is printed.
+
+*     *
+
+*    *
+
+*   *
+
+*  *
+
+* *
+The first line has 5 blank spaces between the stars.
+The second line has 4 blank spaces between the stars, and so on.
+
+Input Format
+
 The input will be a single integer N.
 Output Format
 
