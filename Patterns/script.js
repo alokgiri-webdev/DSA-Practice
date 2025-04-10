@@ -1629,30 +1629,6 @@ First and only line of input contains a single integer N.
 
 
 
-Output Format
-
-Output the Full Pyramid pattern corresponding to the given N.
-
-NOTE:
-
-There is no extra space before the first integer of any row.
-There is an extra space after the last integer of any row.
-All the integers in any row are space separated.
-
-
-Example Input
-
-Input 1:
-
-2
-Input 2:
-
-3
-
-
-Example Output
-
-Output 1:
 
 0 2 0
 1 2 3
@@ -1703,6 +1679,27 @@ printNumPattern(3);
 */
 
 /*
+3. Problem Description
+
+Take an integer N as input, print the corresponding Half Diamond pattern with 2*N - 1 rows.
+
+For example if N = 5 then pattern will be like:
+
+* 
+**
+***
+****
+*****
+****
+***
+**
+*
+NOTE: There should be no spaces after any * .
+
+
+Problem Constraints
+
+2 <= N <= 100
 
 
 Input Format
