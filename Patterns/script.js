@@ -1561,23 +1561,7 @@ printStars(3);
 
 //ADDITIONAL PROBLEMS
 /*
-1. Problem Description
-Take an integer N as input. Print the following pattern of N lines. For N = 5 The following pattern is printed.
-
-*     *
-
-*    *
-
-*   *
-
-*  *
-
-* *
-The first line has 5 blank spaces between the stars.
-The second line has 4 blank spaces between the stars, and so on.
-
-Input Format
-
+1
 The input will be a single integer N.
 Output Format
 
@@ -1628,6 +1612,30 @@ Input Format
 First and only line of input contains a single integer N.
 
 
+Output Format
+
+Output the Full Pyramid pattern corresponding to the given N.
+
+NOTE:
+
+There is no extra space before the first integer of any row.
+There is an extra space after the last integer of any row.
+All the integers in any row are space separated.
+
+
+Example Input
+
+Input 1:
+
+2
+Input 2:
+
+3
+
+
+Example Output
+
+Output 1:
 
 
 0 2 0
