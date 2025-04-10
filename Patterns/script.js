@@ -1392,16 +1392,7 @@ Output 2:
 
 NOTE: Here '_' is used to represent spaces. You have to print spaces in your code.
 */
-/*
-const printPattern = (N) => {
-  for(let row=N; row>0; row--){
-    let stars = '*'.repeat(row);
-    let spaces = ' '.repeat(2*(N-row));
-    console.log(stars+spaces+stars);
-  }
-}
-printPattern(3);
-*/
+
 
 /*
 3. Problem Description
@@ -1465,7 +1456,23 @@ Output 2:
 3 4 5 4 3
 
 */
-
+/*
+const printPattern = (N) => {
+  for(let row = 1; row<=N; row++){
+    let spaces = '0'.repeat(N-row);
+    let num = '';
+    let num_2 ="";
+    for( let i = row; i<=(2*row -1); i++){
+      num += i;
+    }
+    for(let j = (2*row -2); j>=row; j--){
+      num_2 += j;
+    }
+    console.log(spaces+num+num_2+spaces);
+  }
+}
+printPattern(3);
+*/
 
 /*
 4. Problem Description
