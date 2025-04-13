@@ -905,3 +905,12 @@ const checkPalindrome = function(num){
 }
 console.log(checkPalindrome(121));
 */
+
+// MATHS FOR REVISION ------------------------------------------------------------
+/*
+1. Find HCF & LCM of N digits
+2. Print Prime nos between 1 to N
+3. Print Perfect No. between 1 to N
+4. Reverse Integer
+5. Print Armstrong nos between 1 to N
+*/
