@@ -542,3 +542,88 @@ Explanation 2:
  There are no even elements in the array.
 
  */
+
+/*
+4. Problem Description
+
+Write a program to input N numbers array, A from the user and an integer X and print the array by deleting element at specified position X.
+
+Note: The first element is located at position 1, the second element is located at position 2, and so on.
+
+
+Problem Constraints
+
+2 <= N <= 100
+1 <= A[i] <= 1000
+1 <= X <= N
+
+
+Input Format
+
+First line is N which means number of elements.
+Second line contains N space separated integers.
+Third line is X position which has to be deleted.
+
+
+Output Format
+
+N-1 space separated integers of the input array after deleting the element at required position.
+
+
+Example Input
+
+Input 1:
+5
+2 3 1 4 2
+3
+Input 2:
+2
+4 5
+2
+
+
+Example Output
+
+Output 1:
+2 3 4 2
+Output 2:
+4
+
+
+Example Explanation
+
+Explanation 1:
+Clearly after removing the element at position 3 (2 3 1 4 2), the remaining array is 2 3 4 2.
+Explanation 2:
+After removing the element at position 2 (4 5), the remaining array is 4.
+
+*/
+
+/*
+5. Problem Description:
+
+Write a program that returns the product of all elements present in the array.
+
+Note: The list with elements is already passed as an argument to the function. User don't need to take any input. Just perform the task on the passed arguments and return the required result.
+
+Constraints:
+
+1 <= |A| <= 100
+1 <= A <= 100
+Note: It is guaranteed that the resultant product will be <= 1015
+Input Format:
+
+An integer array **A** as the function argument.
+Output Format:
+
+Product of elements in integer format
+Sample Input:
+
+A = [7, 9, 2, 51]
+Sample Output:
+
+6426
+Sample explanation:
+
+The product of all the elements is 7 * 9 * 2 * 51 = 6426 is returned.
+*/
