@@ -156,7 +156,7 @@ Output 2:
 Note: There is no space after the minimum value in the output format.
 There is only a single space between the maximum and minimum value.
 */
-
+/*
 const findMaxMinOfArray = (arr) => {
   let max = arr.at(0);
   let min = arr.at(0);
@@ -172,6 +172,7 @@ const findMaxMinOfArray = (arr) => {
   console.log(max,min);
 }
 findMaxMinOfArray([4, 10, 50, 40, 80]);
+*/
 
 /*
 3. Problem Description
@@ -240,6 +241,18 @@ Input-2:
 N = 4 , A = [10, 50, 40, 80]
 here the first integer is the size of A and the remaining elements are [10, 50, 40, 80]
 which all sum to 180
+*/
+
+//Solution
+/*
+const findSum = (arr)=>{
+  let sum = 0;
+  for(let i=0; i<arr.length; i++){
+    sum += arr[i];
+  }
+  return sum;
+}
+console.log(findSum([1, 2, 3, 4, 5]));
 */
 
 /*
