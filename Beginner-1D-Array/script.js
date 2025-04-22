@@ -379,6 +379,7 @@ You may also refer to the following article for further guidance: link
 */
 
 //Solution:
+/*
 const reverseArr = (arr)=> {
 let result = [];
 for(let i=arr.length-1; i>=0; i--){
@@ -387,6 +388,7 @@ for(let i=arr.length-1; i>=0; i--){
 return result;
 }
 console.log(reverseArr([1, 2, 3, 4, 5]));
+*/
 
 //ADDITIONAL PROBLEMS-----------------------------------------------------
 /*
@@ -431,12 +433,24 @@ Output 2:
 
 all the negative elements of [4 -1 0 -8 -1] are [-1 -8 -1]
 */
+//Solution:
+/*
+const createArrayOfNegativeNos = (arr)=>{
+  let result = [];
+  for(let i=0; i<arr.length; i++){
+    if(arr[i]<0){
+      result.push(arr[i]);
+    }
+  }
+  return result;
+}
+console.log(createArrayOfNegativeNos([5, 1, -5, 2, -8, -4]));
+*/
 
 /*
 2. Problem Description
 
 You are given T(number of test cases) integer arrays. For each array A, you have to find the value of absolute difference between the counts of even and odd elements in the array.
-
 
 
 Problem Constraints
@@ -511,6 +525,22 @@ Explanation 2:
  |Number of even elements - Number of odd elements| = |1 - 0| = |1| = 1  
 
  */
+//Solution:
+/*
+const findDifferenceBetweenOddAndEvenCounts = (arr) => {
+  let evenCount = 0;
+  let oddCount = 0;
+  for(let i=0; i<arr.length; i++){
+    if(Math.abs(arr[i])%2===0){
+      evenCount++;
+    }else{
+      oddCount++;
+    }
+  }
+  return Math.abs(evenCount-oddCount);
+}
+console.log(findDifferenceBetweenOddAndEvenCounts([1, 2, 3, 4]));
+*/
 
 /*
 3. Problem Description
@@ -605,6 +635,23 @@ Explanation 2:
  There are no even elements in the array.
 
  */
+//Solution:
+/*
+const separateOddAndEvenElements = (arr) => {
+  const evenArr = [];
+  const oddArr = [];
+  for(let i=0; i<arr.length; i++){
+    if(Math.abs(arr[i])%2===0){
+       evenArr.push(arr[i]);
+    }else{
+       oddArr.push(arr[i]);
+    }
+  }
+  console.log(evenArr.join(','));
+  console.log(oddArr.join(','));
+}
+separateOddAndEvenElements([1, 2, 3, 4, 5]);
+*/
 
 /*
 4. Problem Description
@@ -661,6 +708,14 @@ Explanation 2:
 After removing the element at position 2 (4 5), the remaining array is 4.
 
 */
+//Solution:
+/*
+const deleteArrayElement = (arr,position)=>{
+  arr.splice((position-1),1);
+  return arr;
+}
+console.log(deleteArrayElement([2, 3, 1, 4, 2],3));
+*/
 
 /*
 5. Problem Description:
@@ -689,4 +744,15 @@ Sample Output:
 Sample explanation:
 
 The product of all the elements is 7 * 9 * 2 * 51 = 6426 is returned.
+*/
+//Solution:
+/*
+const productOfAllElements = (arr) => {
+let product = 1;
+for(let i=0; i<arr.length; i++){
+  product *= arr[i]; 
+}
+return product;
+}
+console.log(productOfAllElements([7, 9, 2, 51]));
 */
