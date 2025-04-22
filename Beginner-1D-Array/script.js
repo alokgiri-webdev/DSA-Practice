@@ -325,6 +325,20 @@ Expected Output
 Provide sample input and click run to see the correct output for the provided input. Use this to improve your problem understanding and test edge cases
 */
 
+//Solution:
+const createNewArr = (originalArr,valueToBeAdded)=>{
+  let newArr = [...originalArr];
+
+  for(let i=0; i<newArr.length; i++){
+    newArr[i] = newArr[i] + valueToBeAdded;
+  }
+  
+  return newArr;
+}
+console.log(createNewArr([1,2,3,2,1],3));
+
+
+
 /*
 5. Problem Description
 
