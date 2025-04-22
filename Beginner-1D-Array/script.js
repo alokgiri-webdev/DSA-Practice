@@ -103,6 +103,17 @@ Since this concept will be covered later in the module, we encourage you to do s
 You may also refer to the following article for further guidance: link
 */
 
+//Solution
+/*
+const createNewArr = (orginalArray,position,valueToInsert) => {
+  const orginalArrayCopy = [...orginalArray]; 
+  orginalArrayCopy.splice(position-1,0,valueToInsert);
+  return orginalArrayCopy;
+}
+const Arr = [2, 3, 1, 4, 2];
+console.log(createNewArr(Arr,3,5)); 
+*/
+
 /*
 2. Problem Description
 
