@@ -326,6 +326,7 @@ Provide sample input and click run to see the correct output for the provided in
 */
 
 //Solution:
+/*
 const createNewArr = (originalArr,valueToBeAdded)=>{
   let newArr = [...originalArr];
 
@@ -336,8 +337,7 @@ const createNewArr = (originalArr,valueToBeAdded)=>{
   return newArr;
 }
 console.log(createNewArr([1,2,3,2,1],3));
-
-
+*/
 
 /*
 5. Problem Description
@@ -377,6 +377,16 @@ This question requires you to read multiple numbers from input. The first number
 Since this concept will be covered later in the module, we encourage you to do some independent research and write your code accordingly.
 You may also refer to the following article for further guidance: link
 */
+
+//Solution:
+const reverseArr = (arr)=> {
+let result = [];
+for(let i=arr.length-1; i>=0; i--){
+  result.push(arr[i]);
+}
+return result;
+}
+console.log(reverseArr([1, 2, 3, 4, 5]));
 
 //ADDITIONAL PROBLEMS-----------------------------------------------------
 /*
