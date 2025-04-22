@@ -116,7 +116,6 @@ console.log(createNewArr(Arr,3,5));
 
 /*
 2. Problem Description
-
 Take input an array A of size N and write a program to print maximum and minimum elements of the input. The only line of the input would contain a single integer N that represents the length of the array followed by the N elements of the input array A.
 
 Problem constraints
@@ -157,6 +156,22 @@ Output 2:
 Note: There is no space after the minimum value in the output format.
 There is only a single space between the maximum and minimum value.
 */
+
+const findMaxMinOfArray = (arr) => {
+  let max = arr.at(0);
+  let min = arr.at(0);
+  //Find the max & min element of the array
+  for(let i=0; i<arr.length; i++){
+    if(arr.at(i)>max){
+      max = arr.at(i);
+    }
+    if(arr.at(i)<min){
+      min = arr.at(i);
+    }
+  }
+  console.log(max,min);
+}
+findMaxMinOfArray([4, 10, 50, 40, 80]);
 
 /*
 3. Problem Description
