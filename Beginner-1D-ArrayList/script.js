@@ -428,5 +428,106 @@ Provide sample input and click run to see the correct output for the provided in
 //Solution:
 
 /*
-3.
+3. Problem Description
+
+Write a function to check if the given array A has consecutive duplicate elements or not.
+Return True if there are consecutive duplicate elements in the list else return False.
+
+Here by consecutive duplicates, we mean duplicates that are present at consecutive indices in the array
+
+
+Problem Constraints
+
+1 <= N <= 105
+1 <= A[i] <= 109
+
+
+Input Format
+
+An integer array A as the function argument.
+
+
+Output Format
+
+Return True or False
+
+
+Example Input
+
+Input 1:
+1
+4
+1 2 3 3
+Input 2:
+1
+2
+1 2
+
+
+Example Output
+
+Output 1:
+True
+Output 2:
+False
+
+
+Example Explanation
+
+Explanation 1:
+As there are 3 3 in the list i.e. at indices 2 and 3, there True is returned.
+Explanation 2:
+There are no consecutive duplicate elements in the list.
 */ 
+//Solution:
+
+/*
+4. Problem Description
+
+You are provided with an integer array A. Return another array B of size same as that of A such that B[i] = A[i]3 for 1 <= i <= |A| (1 based indexing).
+
+
+Problem Constraints
+
+1 <= |A| <= 106
+1 <= A[i] <= 106
+
+
+Input Format
+
+The first and only argument is an integer array A.
+
+
+Output Format
+
+Return array B.
+
+
+Example Input
+
+Input 1 :
+A=[2, 6, 8, 1]
+Input 2 :
+A=[5]
+
+
+Example Output
+
+Output 1 :
+[8, 216, 512, 1]
+Output 2 :
+[125]
+
+
+Example Explanation
+
+Example 1 : Cubes of numbers 2, 6, 8 and 1 are 8, 216, 512 and 1 respectively.
+
+Example 2 : Cubes of number 5 is 125.
+
+
+
+Expected Output
+Provide sample input and click run to see the correct output for the provided input. Use this to improve your problem understanding and test edge cases
+*/
+//Solution:
