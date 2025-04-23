@@ -81,6 +81,17 @@ Explanation 2:
 */
 
 //Solution:
+/*
+const findElement = (arr,ele)=>{
+  for(let i=0; i<=arr.length; i++){
+    if(arr[i]===ele){
+      return 1;
+    }
+  }
+  return 0
+}
+console.log(findElement([4, 1, 5, 9, 1],5));
+*/
 
 /*
 2. Problem Description
