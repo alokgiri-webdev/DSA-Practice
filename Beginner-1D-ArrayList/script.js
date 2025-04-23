@@ -240,3 +240,193 @@ Expected Output
 Provide sample input and click run to see the correct output for the provided input. Use this to improve your problem understanding and test edge cases
 */
 //Solution:
+
+/*
+5. Problem Description
+
+Given an Array of integers A, every element in it is repeated twice except one, find that unique element.
+
+
+Problem Constraints
+
+1<= Length of array A <= 103
+0<= Ai <=1000
+
+
+Input Format
+
+First argument A is the given array.
+
+
+Output Format
+
+Return an Integer X, such that X occurs once in the A.
+
+
+Example Input
+
+Input 1:
+
+
+
+
+
+
+
+
+A = [1, 4, 3, 5, 2, 3, 5, 1, 4]
+Input 2:
+
+A = [9, 10, 7, 10, 9, 1, 5, 1, 5]
+
+
+
+
+
+
+
+
+
+Example Output
+
+Output 1:
+
+
+
+
+
+
+
+
+2
+Output 2:
+
+7
+
+
+
+
+
+
+
+
+
+Example Explanation
+
+In Example 1:
+All the elements except for 2 occurs twice in the array. Hence 2 is the unique element.
+
+
+
+Expected Output
+Provide sample input and click run to see the correct output for the provided input. Use this to improve your problem understanding and test edge cases
+
+*/
+//Solution:
+
+//ADDITIONAL QUESTIONS
+/*
+1. Problem Description:
+
+Write a program that returns the product of all elements present in the array.
+
+Note: The list with elements is already passed as an argument to the function. User don't need to take any input. Just perform the task on the passed arguments and return the required result.
+
+Constraints:
+
+1 <= |A| <= 100
+1 <= A <= 100
+Note: It is guaranteed that the resultant product will be <= 1015
+Input Format:
+
+An integer array **A** as the function argument.
+Output Format:
+
+Product of elements in integer format
+Sample Input:
+
+A = [7, 9, 2, 51]
+Sample Output:
+
+6426
+Sample explanation:
+
+The product of all the elements is 7 * 9 * 2 * 51 = 6426 is returned.
+*/
+//Solution:
+
+/*
+2. Problem Description
+
+You are given an integer array A and an integer B.
+
+You are required to return the count of pairs having sum equal to B.
+
+NOTE: pair (i,j) and (j,i) are same.
+
+
+
+Problem Constraints
+
+1 <= A.size() <= 10000
+
+1 <= A[i] <= 10000
+
+1 <= B <= 10000
+
+
+
+Input Format
+
+First argument is an integer array A.
+
+Seond argument is an integer B.
+
+
+
+Output Format
+
+You have to return an integer representing count of required pairs.
+
+
+
+Example Input
+
+Input 1:
+
+A = [1,2,3,2,1]
+B = 5
+Input 2:
+
+A = [1,1,1]
+B = 2
+
+
+Example Output
+
+Output 1:
+
+2
+Output 2:
+
+3
+
+
+Example Explanation
+
+Explanation 1:
+
+ A[1]+A[2] = A[2]+A[3] = 5
+Explanation 2:
+
+ A[0]+A[1] = A[0]+A[2] = A[1]+A[2] = 2
+
+
+Expected Output
+Provide sample input and click run to see the correct output for the provided input. Use this to improve your problem understanding and test edge cases.
+*/
+//Solution:
+
+/*
+3.
+*/ 
