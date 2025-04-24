@@ -138,6 +138,7 @@ Explanation 2:
 
 */
 //Solution:
+/*
 const divisibleBy = (arr)=>{
   let result = [];
   for(let i=0; i<arr.length; i++){
@@ -148,6 +149,7 @@ const divisibleBy = (arr)=>{
   return result;
 }
 console.log(divisibleBy([5, 7, 70, 50, 35]));
+*/
 
 /*
 3. Problem Description
@@ -203,6 +205,18 @@ Provide sample input and click run to see the correct output for the provided in
 
 */
 //Solution:
+/*
+const frequencyOfArrElement = (arr,k)=>{
+  let count = 0;
+  for(let i=0; i<arr.length; i++){
+   if(arr[i] === k){
+    count++;
+   }
+  }
+  return count;
+}
+console.log(frequencyOfArrElement([1, 1, 2, 4, 2],2));
+*/
 
 /*
 4. Problem Description
