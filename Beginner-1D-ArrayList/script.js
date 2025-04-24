@@ -98,22 +98,18 @@ console.log(findElement([4, 1, 5, 9, 1],5));
 
 Write a program that returns the list of elements that are present in the given list and are divisible by 5 and 7.
 
-
 Problem Constraints
 
 1 <= A.size() <= 105
 1 <= A[i] <= 105
 
-
 Input Format
 
 The only argument is an Integer Array A.
 
-
 Output Format
 
 Return an Integer Array, denoting the elements that are divisible by 5 and 7 from the given list.
-
 
 Example Input
 
@@ -142,6 +138,16 @@ Explanation 2:
 
 */
 //Solution:
+const divisibleBy = (arr)=>{
+  let result = [];
+  for(let i=0; i<arr.length; i++){
+    if(arr[i]%5 === 0 && arr[i]%7 === 0){
+       result.push(arr[i]);
+    }
+  }
+  return result;
+}
+console.log(divisibleBy([5, 7, 70, 50, 35]));
 
 /*
 3. Problem Description
