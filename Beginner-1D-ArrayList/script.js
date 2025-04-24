@@ -309,49 +309,19 @@ Example Input
 
 Input 1:
 
-
-
-
-
-
-
-
 A = [1, 4, 3, 5, 2, 3, 5, 1, 4]
 Input 2:
 
 A = [9, 10, 7, 10, 9, 1, 5, 1, 5]
 
-
-
-
-
-
-
-
-
 Example Output
 
 Output 1:
-
-
-
-
-
-
-
 
 2
 Output 2:
 
 7
-
-
-
-
-
-
-
-
 
 Example Explanation
 
@@ -365,6 +335,22 @@ Provide sample input and click run to see the correct output for the provided in
 
 */
 //Solution:
+/*
+const findUnique = (arr)=>{
+  for(let i=0; i<arr.length; i++){
+    let count = 0;
+    for(let j=0; j<arr.length; j++){
+      if(arr[i]===arr[j]){
+        count++;
+      }
+    }
+    if(count===1){
+      return arr[i];
+    }
+  }
+}
+console.log(findUnique([1, 4, 3, 5, 2, 3, 5, 1, 4]));
+*/
 
 //ADDITIONAL QUESTIONS
 /*
