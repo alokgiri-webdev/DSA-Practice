@@ -271,6 +271,17 @@ Expected Output
 Provide sample input and click run to see the correct output for the provided input. Use this to improve your problem understanding and test edge cases
 */
 //Solution:
+/*
+const checkNonDecreasingArr = (arr)=>{
+  for(let i=1; i<arr.length; i++){
+    if(arr[i-1]>arr[i]){
+      return 0;
+    }
+  }
+return 1;
+}
+console.log(checkNonDecreasingArr([1, 2, 1]));
+*/
 
 /*
 5. Problem Description
