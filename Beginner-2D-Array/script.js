@@ -277,3 +277,187 @@ A + B = [[1+9, 2+9, 3+7],
          [5,   3,  6],   
          [11, 14, 12]].
 */
+//ADDITIONAL PROBLEMS
+/*
+1. Problem Description
+
+You are given two matrices A and B of equal dimensions and you have to check whether two matrices are equal or not.
+
+NOTE: Both matrices are equal if A[i][j] == B[i][j] for all i and j.
+
+
+Problem Constraints
+
+1 <= A.size(), B.size() <= 1000
+1 <= A[i].size(), B[i].size() <= 1000
+1 <= A[i][j], B[i][j] <= 1000
+A.size() == B.size()
+A[i].size() == B[i].size()
+
+
+Input Format
+
+First argument is 2-D array of integers representing matrix A.
+
+Second argument is 2-D array of integers representing matrix B.
+
+
+
+
+
+Output Format
+
+Return 1 if both matrices are equal or return 0.
+
+
+
+Example Input
+
+Input 1:
+
+A = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+B = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+Input 2:
+
+A = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+B = [[1, 2, 3],
+     [7, 8, 9],
+     [4, 5, 6]]
+
+
+
+
+Example Output
+
+Output 1:
+
+1
+Output 2:
+
+0
+
+
+
+
+Example Explanation
+
+Explanation 1:
+
+==> Clearly all the elements of both matrices are equal at respective positions.
+Explanation 2:
+
+==> Clearly, there are mismatches at (1, 0), (1, 1), (1, 2), (2, 0), (2, 1) and (2, 2).
+A = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]] 
+B = [[1, 2, 3],
+     [7, 8, 9],
+     [4, 5, 6]]
+*/
+
+/*
+2. Problem Description
+
+You are given two integer matrices A and B having same size(Both having same number of rows (N) and columns (M). You have to subtract matrix B from A and return the resultant matrix. (i.e. return the matrix A - B).
+
+If A and B are two matrices of the same order (same dimensions). Then A - B is a matrix of the same order as A and B and its elements are obtained by doing an element wise subtraction of A from B.
+
+
+
+
+
+
+Problem Constraints
+
+1 <= N, M <= 103
+
+
+
+-109 <= A[i][j], B[i][j] <= 109
+
+
+
+
+
+
+
+
+Input Format
+
+The first argument is the 2D integer array A
+The second argument is the 2D integer array B
+
+
+
+
+Output Format
+
+Return a 2D matrix denoting A - B.
+
+
+
+Example Input
+
+Input 1:
+
+
+
+
+
+A =  [[1, 2, 3], 
+      [4, 5, 6], 
+      [7, 8, 9]]
+
+B =  [[9, 8, 7], 
+      [6, 5, 4], 
+      [3, 2, 1]]
+Input 2:
+
+A = [[1, 1]]
+ 
+B = [[2, 3]] 
+
+
+
+
+
+
+Example Output
+
+Output 1:
+
+
+
+
+
+ [[-8, -6, -4],
+  [-2, 0, 2],
+  [4, 6, 8]]
+Output 2:
+
+ [[-1, -2]]
+
+
+
+
+
+
+Example Explanation
+
+Explanation 1:
+
+
+
+
+
+ image
+Explanation 2:
+
+ [[1, 1]] - [[2, 3]] = [[1 - 2, 1 - 3]] = [[-1, -2]]
+*/
