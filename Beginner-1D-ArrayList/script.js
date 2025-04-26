@@ -693,3 +693,42 @@ const findUnique = (arr)=>{
 }
 console.log(findUnique([9, 10, 10, 9, 1, 5, 1, 5])); 
 */
+
+/*
+function call(obj) {
+  obj.val = 100;
+  console.log(data.val); // Guess the o/p
+}
+
+let data = { val: 1};
+call(data);
+
+console.log(data.val); // Guess the o/p
+*/
+
+/* Find the missing element of the arr. 
+Input
+arr = [1,2,3,5,6,7];
+O/P
+= 4
+*/
+
+const findMissingElement = (arr)=>{
+  //Looping over the arr
+  for(let i=0; i<arr.length-1; i++){
+    const diff = arr[i+1] - arr[i];
+    if(diff === 1){
+    continue;
+    }else{
+      return arr[i]+1;
+    }
+  }
+}
+console.log(findMissingElement([1,2,3,5,6,7]));
+
+/*
+i=0     diff= 1   skips
+i=1     diff=1    skips
+i=2     diff=2    3+1 = 4
+
+*/
