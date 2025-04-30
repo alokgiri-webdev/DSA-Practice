@@ -381,7 +381,15 @@ Sample explanation:
 
 The product of all the elements is 7 * 9 * 2 * 51 = 6426 is returned.
 */
-//Solution:
+//Solution: 
+const findArrayProduct = (arr)=>{
+  let product = 1;
+for(let i=0; i<arr.length; i++){
+product *= arr[i];
+}
+return product;
+}
+console.log(findArrayProduct([7, 9, 2, 51]));
 
 /*
 2. Problem Description
