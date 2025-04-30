@@ -464,6 +464,7 @@ Expected Output
 Provide sample input and click run to see the correct output for the provided input. Use this to improve your problem understanding and test edge cases.
 */
 //Solution:
+/*
 const findPair = (arr,k)=>{
   let count = 0;
   for(let i=0; i<arr.length-1; i++){
@@ -474,6 +475,7 @@ const findPair = (arr,k)=>{
   return count;
 }
 console.log(findPair([1,2,3,2,1],5));
+*/
 
 /*
 3. Problem Description
@@ -528,7 +530,18 @@ Explanation 2:
 There are no consecutive duplicate elements in the list.
 */ 
 //Solution:
-
+/*
+const findConsecutiveDuplicates = (arr)=>{
+  for(let i=0; i<arr.length-1; i++){
+    if(arr[i] !== arr[i+1] ){
+      continue;
+    }else{
+      return true;
+    }
+  }
+}
+console.log(findConsecutiveDuplicates([1,2,3,3]));
+*/
 /*
 4. Problem Description
 
