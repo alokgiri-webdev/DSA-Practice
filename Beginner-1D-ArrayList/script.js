@@ -382,6 +382,7 @@ Sample explanation:
 The product of all the elements is 7 * 9 * 2 * 51 = 6426 is returned.
 */
 //Solution: 
+/*
 const findArrayProduct = (arr)=>{
   let product = 1;
 for(let i=0; i<arr.length; i++){
@@ -390,6 +391,7 @@ product *= arr[i];
 return product;
 }
 console.log(findArrayProduct([7, 9, 2, 51]));
+*/
 
 /*
 2. Problem Description
@@ -462,6 +464,16 @@ Expected Output
 Provide sample input and click run to see the correct output for the provided input. Use this to improve your problem understanding and test edge cases.
 */
 //Solution:
+const findPair = (arr,k)=>{
+  let count = 0;
+  for(let i=0; i<arr.length-1; i++){
+    if(arr[i]+arr[i+1] === k){
+        count++;
+    }
+  }
+  return count;
+}
+console.log(findPair([1,2,3,2,1],5));
 
 /*
 3. Problem Description
