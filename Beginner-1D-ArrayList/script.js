@@ -653,7 +653,22 @@ Expected Output
 Provide sample input and click run to see the correct output for the provided input. Use this to improve your problem understanding and test edge cases
 */
 //Solution:
-
+/*
+const frequecyCountofElements = (arr)=>{
+  let result = [];
+  for(let i=0; i<arr.length; i++){
+    let count = 0;
+    for(let j=0; j<arr.length; j++){
+      if(arr[i] === arr[j]){
+        count++;
+      }
+    }
+    result.push(count);
+  }
+  return result;
+}
+console.log(frequecyCountofElements([1, 2, 5, 1, 5, 1 ]));
+*/
 
 // 
 /*
